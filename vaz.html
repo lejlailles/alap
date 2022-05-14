@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content=<?php $token=csrf_token(); echo $token;?>>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="\js\Ajax.js"></script>
+    <title>Illés Lejla</title>
+</head>
+
+<body>
+<main>
+    <header>
+   
+
+
+            <p>Szakdolgozatok</p>
+            <p>Admin</p>
+
+
+
+        </div>
+    </header>
+
+    <form id="form">
+      <fieldset>
+      <legend>Mit tettél ma a földért?</legend>
+      <select id="osztaly">
+         
+
+      </select>
+      <select id="tevekenyseg">
+
+      </select>
+      <input type="button" id="submit" value="Küld">
+  </fieldset> 
+  </form>
+    <div class="szakdolgozatoklistazasa">
+        <div class="table-responsive">          
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
+
+
+   <div class="ujadat">
+                        <form>
+                            <div style="display:none"><input type="text" id="id"></div>
+                            <div class="sor"><label for="szakdoga_nev">Szakdolgozat címe</label><input type="text" id="szakdoga_nev"></div>
+                            <div class="sor"><label for="tagokneve">Készítők neve</label><input type="text" id="tagokneve"></div>
+                            <div class="sor"><label for="oldallink">Az oldal elérhetősége </label><input type="text" id="oldallink"></div>
+                            <div class="sor"><label for="githublink"> GitHub elérhetőség</label><input type="text" id="githublink"></div>
+                            <div class="gomb"><button id="uj">Új</button>
+                                <button id="modosit">Módosít</button>
+                            </div>
+                        </form>
+                    </div>
+</main>
+</body>
+
+</html>

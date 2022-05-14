@@ -1,0 +1,2 @@
+php artisan make:model Tevekenyseg -m
+php artisan make:controller BejegyzesController -m

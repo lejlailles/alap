@@ -1,0 +1,25 @@
+class Task{
+    constructor(elem, adat){
+        this.elem=elem;
+        this.adat=adat;
+        this.taskTitle=this.elem.children(".cim");
+
+        this.torolGomb.on("click",()=>{
+            this.kattintasTrigger("torol");
+        });
+        this.setAdat(this.adat);
+    }
+
+    setAdat(adat){
+        this.adat=adat;
+        this.taskTitle.text(adat.title);
+
+    }
+
+    kattintasTrigger(gomb) {
+        let esemeny = new CustomEvent(gomb, {
+            detail: this.adat
+        });
+        window.dispatchEvent(esemeny);
+    }
+}
