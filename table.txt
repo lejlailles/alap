@@ -1,0 +1,23 @@
+ <div class="szakdolgozatoklistazasa">
+                     
+                        <table class="table table-striped">
+                            <thead class="fejlec">
+                                <th class="szakdogacimefejlec">Szakdolgozat címe</th>
+                                <th class="tagokfejlec">Készítők neve</th>
+                                <th class="githublinkfejlec">GitHub link</th>
+                                <th class="oldallinkfejlec">Szakdolgozat elérhetősége</th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody class="szuloelem">
+                                <tr class="sablon">
+                                    <td class="szakdoga_nev"></td>
+                                    <td class="tagokneve"></td>
+                                    <td class="oldallink"></td>
+                                    <td class="githublink"></td>
+                                    <td><button id='szerk'>Szerkesztés</button></td>
+                                    <td><button id='torles'>Törlés</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
